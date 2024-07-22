@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai car license plate</title>
+</head>
+<body>
+    <center><h1>Car License Plate Detection and Recognition</h1></center>
+    <p>Welcome to the Car License Plate Detection and Recognition project!</p>
+    <p>Currently in its early stages, this project aims to leverage Django and YOLOv10 to accurately predict Thai car license plate text. I am excited to share the progress and the vision behind this initiative.</p>
+    <h3>Try to Upload an Image</h3>
+    <p>Example license image</p>
+    <img src="https://th.bing.com/th/id/OIP._z8pUAlP5TwS7_ccvk0vpwHaFj?rs=1&pid=ImgDetMain" width="250px">
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image">
+        <br>
+        <br>
+        <button type="submit">Predict !!!</button>
+    </form>
+
+
+</body>
+</html>
